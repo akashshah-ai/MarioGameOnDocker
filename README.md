@@ -31,7 +31,7 @@ Mario Game Deployment On Docker
         docker run -d -p 3000:80 mario-game-nginx
         ```
 5.  **Play the Game**
-    - To play the game, just hit to `http://<Ec2 instance Public IP >`
+    - To play the game, just hit to `http://<Ec2 instance Public IP >/3000`
 
 7. **Contact**
 
