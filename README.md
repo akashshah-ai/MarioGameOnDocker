@@ -17,7 +17,7 @@ Mario Game Deployment On Docker
 
 2. **Launch Server**
     - Launch an AWS EC2 Instance with `t2.micro` as Instance Type, and Give atleast 8GB of EBS Volume.
-    - In `Security Group` you can allow port no 80 and 22.
+    - In `Security Group` you can allow port no 3000 and 22.
 
 3. **Build the Docker image**
    - This command builds a Docker image named mario-game-nginx.
@@ -28,7 +28,7 @@ Mario Game Deployment On Docker
 4. **Run the Docker container**
     - After building the image, you can run a container using this image with the following command:
         ```bash
-        docker run -d -p 80:80 mario-game-nginx
+        docker run -d -p 3000:80 mario-game-nginx
         ```
 5.  **Play the Game**
     - To play the game, just hit to `http://<Ec2 instance Public IP >`
